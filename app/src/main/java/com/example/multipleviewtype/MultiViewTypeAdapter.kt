@@ -30,7 +30,6 @@ class MultiViewTypeAdapter() : ListAdapter<ItemType, MultiViewTypeAdapter.ItemVi
             else -> throw IllegalArgumentException("Invalid type")
         }
 
-
         return ItemViewHolder(binding)
     }
 
@@ -39,9 +38,6 @@ class MultiViewTypeAdapter() : ListAdapter<ItemType, MultiViewTypeAdapter.ItemVi
         holder.bind(adapterData[position])
     }
 
-    override fun getItemCount(): Int {
-        return adapterData.size
-    }
 
 
     override fun getItemViewType(position: Int): Int {
@@ -88,7 +84,7 @@ class MultiViewTypeAdapter() : ListAdapter<ItemType, MultiViewTypeAdapter.ItemVi
         override fun areItemsTheSame(oldItem: ItemType, newItem: ItemType): Boolean {
             // Check if items have the same unique ID
             return oldItem.id == newItem.id
-            //unresolved the id
+
         }
 
         override fun areContentsTheSame(oldItem: ItemType, newItem: ItemType): Boolean {
