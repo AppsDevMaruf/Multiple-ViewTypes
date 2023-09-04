@@ -7,7 +7,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.multipleviewtype.data.local.CircleData
 import com.example.multipleviewtype.data.local.RectangularData
 import com.example.multipleviewtype.data.local.SquareData
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

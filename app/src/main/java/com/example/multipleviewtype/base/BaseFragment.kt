@@ -43,6 +43,7 @@ abstract class BaseFragment<T : ViewDataBinding> : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         configUi()
         setupNavigation()
+        binObserver()
        /* if (isConnectedToNetwork(requireContext())) {
             binObserver()
         } else {

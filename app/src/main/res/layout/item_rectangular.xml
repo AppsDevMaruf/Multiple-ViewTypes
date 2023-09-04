@@ -14,7 +14,7 @@
         android:padding="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background"
+        app:srcCompat="@drawable/ae_credit_card"
         app:shapeAppearanceOverlay="@style/rectangularImageView" />
 
     <!-- Add other rectangular view elements as needed -->
